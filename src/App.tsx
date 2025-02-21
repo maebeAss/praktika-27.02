@@ -1,7 +1,7 @@
 import './App.css'
 import { ImageSlider } from './ImageSlider'
-import slider1 from "../public/siteSlider1.png"
-import slider2 from "../public/siteSlider2.png"
+import slider1 from "../public/heroSlider1.png"
+import slider2 from "../public/heroSlider2.png"
 
 const IMAGES = [slider1, slider2]
 
@@ -31,9 +31,11 @@ function App() {
               <p>Хочу мини-приложение!</p>
             </button>
           </div>
-          <section className='hero-img-sec'>
-            <video src='...'></video>
-          </section>
+          <div className='hero-vid-sec'>
+            <video autoPlay loop muted disablePictureInPicture className="hero-vid">
+              <source src="../public/hero-vid.mp4"/>
+            </video>
+          </div>
         </div>
       </header>
       <main>
@@ -101,15 +103,13 @@ function App() {
               <p>Полный цикл разработки: от анализа до запуска, а также гарантия качественного пользовательского опыта</p>
             </div>
             <div className='portf-sign-sec'>
-              <div>
+              <div className='sign'>
                 <h4>Sk</h4>
               </div>
             </div>
           </div>
           <div className='portf-img-sec'>
-            <img></img>
-            <img></img>
-            <img></img>
+            <img src='../public/mainSlider1.png'/>
           </div>
         </div>
         <div className='howThatWorks-sec'>
@@ -117,43 +117,47 @@ function App() {
             <h3>Как это работает?</h3>
             <div className='miniCard-sec'>
               <div className='card'>
-                <h4></h4>
-                <p></p>
+                <h4>Анализируем</h4>
+                <p>Исследуем ваш бизнес и подбираем решение</p>
               </div>
               <div className='card'>
-                <h4></h4>
-                <p></p>
+                <h4>Создаем</h4>
+                <p>Настраиваем системы для сбора клиентской информации</p>
               </div>
               <div className='card'>
-                <h4></h4>
-                <p></p>
+                <h4>Контролируем</h4>
+                <p>А вы получаете управление каждым этапом — от первого интереса клиента до покупки</p>
               </div>
             </div>
-            <p></p>
+            <p className='subtext'>Вы видите все процессы в реальном времени и получаете полное понимание, как клиенты взаимодействуют с Вашим продуктом</p>
           </div>
           <div className='map-sec'>
-            <img></img>
+            <img src='../public/map.png'/>
           </div>
         </div>
         <div className='newLevel-sec'>
           <div className='text-sec'>
-            <h2></h2>
-            <h4></h4>
-            <p></p>
+            <div className='title'>
+              <h2>Готовы выйти на новый уровень и захватить глобальный рынок?</h2>
+              <h4>Мы поможем вам стать лидером мобильной коммерции в России и за её пределами!</h4>
+            </div>
+            <p>©️ Студия Сайтов 2025. Все права защищены</p>
           </div>
           <div className='forma-sec'>
-            <div className='nameForma-sec'>
-              <input></input>
-              <input></input>
+            <div className='inpu-forma-sec'>
+              <div className='nameForma-sec'>
+                <label className='custom-input'><input placeholder='Имя*'></input></label>
+                <label className='custom-input'><input placeholder='Фамилия*'></input></label>
+              </div>
+              <div className='phoneSphereForma-sec'>
+                <label className='custom-input'><input type='tel' placeholder='Номер телефона*'></input></label>
+                <label className='custom-input'><input placeholder='Сфера Бизнеса'></input></label>
+              </div>
+              <button>
+                <h4>Отправить</h4>
+              </button>
+              <p></p>
             </div>
-            <div className='phone+sphereForma-sec'>
-              <input></input>
-              <input></input>
-            </div>
-            <button>
-              <h4>Отправить</h4>
-            </button>
-            <p></p>
           </div>
         </div>
       </main>

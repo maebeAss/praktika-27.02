@@ -22,9 +22,8 @@
 }
 
 .img-slider-butt > * {
-    color: #212121;
-    width: 2rem;
-    height: 2rem;
+    object-fit: cover;
+    color: var(--icon-primary);
     fill: var(--icon-primary);
 }
 
