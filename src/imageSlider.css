@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.slider-img {
+    object-fit: cover;
+    width: 532px;
+    height: 100%;
+    display: block;
+}
+
+.img-slider-butt {
+    display: flex;
+    width: 96px;
+    height: 96px;
+    border: 1px var(--border-primary-tp-8) solid;
+    background: var(--bg-primary);
+    color: var(--icon-primary-tp-32);
+    border-radius: 999px;
+    padding: 2rem 3rem 2rem 3rem;
+    transition: 150ms ease-out;
+}
+
+.img-slider-butt > * {
+    color: #212121;
+    width: 2rem;
+    height: 2rem;
+    fill: var(--icon-primary);
+}
+
+:root {
+    --bg-primary: #FFFFFF;
+    --bg-accent: #2196F3;
+    --bg-inverse: #212121;
+    --bg-system-pos: #4CAF50;
+    --bg-system-neg: #F44336;
+    --bg-primary-tp-16: #FFFFFF29;
+    --bg-primary-tp-8: #FFFFFF14;
+    --bg-accent-tp-8: #2196F314;
+    --bg-inverse-tp-48: #2121217A;
+    --bg-inverse-tp-8: #2121210A;
+    --bg-inverse-tp-4: #2121210A;
+
+    --text-primary: #212121;
+    --text-accent: #2196F3;
+    --text-inverse: #FFFFFF;
+    --text-system-pos: #4CAF50;
+    --text-system-neg: #F44336;
+    --text-primary-tp-64: #212121A3;
+    --text-primary-tp-48: #2121217A;
+    --text-primary-tp-24: #2121213D;
+    --text-inverse-tp-64: #FFFFFFA3;
+    --text-inverse-tp-32: #FFFFFF52;
+
+    --icon-primary: #212121;
+    --icon-accent: #2196F3;
+    --icon-inverse: #FFFFFF;
+    --icon-system-pos: #4CAF50;
+    --icon-system-neg: #F44336;
+    --icon-primary-tp-48: #2121217A;
+    --icon-primary-tp-32: #21212152;
+    --icon-primary-tp-24: #2121213D;
+
+    --border-primary: #212121;
+    --border-accent: #2196F3;
+    --border-inverse: #FFFFFF;
+    --border-system-pos: #4CAF50;
+    --border-system-neg: #F44336;
+    --border-primary-tp-8: #21212114;
+    --border-primary-tp-4: #2121210A;
+
+    --H0: 96px;
+    --H1: 64px;
+    --H2: 32px;
+    --SH: 28px;
+    --S1: 24px;
+    --T1: 24px;
+    --S2: 20px;
+    --T2: 20px;
+    --T3: 16px;
+
+    --H0-d: 48px;
+    --H1-d: 32px;
+    --H2-d: 24px;
+    --SH-d: 20px;
+    --S1-d: 16px;
+    --T1-d: 16px;
+    --S2-d: 14px;
+    --T2-d: 14px;
+    --T3-d: 12px;
+}

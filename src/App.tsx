@@ -1,4 +1,9 @@
 import './App.css'
+import { ImageSlider } from './ImageSlider'
+import slider1 from "../public/siteSlider1.png"
+import slider2 from "../public/siteSlider2.png"
+
+const IMAGES = [slider1, slider2]
 
 function App() {
   return (
@@ -32,11 +37,8 @@ function App() {
         </div>
       </header>
       <main>
-        <div className='slider-sec'>
-          <button id='slider-nav-butt-left'>
-            <p>L</p>
-          </button>
-          <div className='main-slider'>
+        <div className='main-slider'>
+          <div className='slider-title'>
             <div className='slider-navPoint'>
               <div className='nav-point'></div>
               <div className='nav-point'></div>
@@ -52,51 +54,43 @@ function App() {
                 <p>Выбор категории</p>
               </button>
             </div>
-            <div>
-              /* ТУТ СЛАЙДЕР РЕАЛИЗОВАТЬ */
-            </div>
           </div>
-          <button id='slider-nav-butt-right'>
-            <p>R</p>
-          </button>
+          <div className='img-slider'>
+            <ImageSlider imageUrls={IMAGES}/>
+          </div>
         </div>
         <div className='card-sec'>
           <div className='card'>
-            <img></img>
-            <p>Цифровизация и автоматизация</p>
-            <p>управляйте продажами и коммуникацией</p>
+            <img src='../public/card1.png'/>
+            <p>Подходит для любой ниши:<br/><span> магазины, доставка, образвание, недвижимость и др.</span></p>
           </div>
           <div className='card'>
-            <img></img>
-            <p>Цифровизация и автоматизация</p>
-            <p>управляйте продажами и коммуникацией</p>
+          <img src='../public/card2.png'/>
+            <p>Уведомления нового поколения:<br/><span> замените устаревшие SMS на инетрактивные сообщения.</span></p>
           </div>
           <div className='card'>
-            <img></img>
-            <p>Цифровизация и автоматизация</p>
-            <p>управляйте продажами и коммуникацией</p>
+            <img src='../public/card3.png'/>
+            <p>Цифровизация и автоматизация:<br/><span> управляйте продажами и коммуникацией.</span></p>
           </div>
           <div className='card'>
-            <img></img>
-            <p>Цифровизация и автоматизация</p>
-            <p>управляйте продажами и коммуникацией</p>
+            <img src='../public/card4.png'/>
+            <p>Геймификация:<span> вовлекайте клиентов через акции и розыгрыши.</span></p>
           </div>
         </div>
-        <div>
-          <div className='card-img-sec'>
-            <img></img>
-          </div>
+        <div className='telegram-sec'>
+          <img className="card-img" src='../public/telegram1.png'/>
           <div className='card-text-sec'>
             <h2>Почему Telegram?</h2>
             <ol>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Клиенту удобнее покупать в мессенджере</li>
+              <li>Будьте ближе к клиентам — становитесь частью их повседневной жизни</li>
+              <li>Вы рядом, как часть семьи</li>
+              <li>Новый рынок и глобальный рост</li>
             </ol>
+            <hr></hr>
             <div className='card-sub-text'>
-              <p></p>
-              <p></p>
+              <p>Telegram открывает доступ не только к российской аудитории, но и к международному рынку.</p>
+              <p>Используйте глобальный тренд, чтобы развивать свой бизнес и быть впереди конкурентов</p>
             </div>
           </div>
         </div>
@@ -107,8 +101,9 @@ function App() {
               <p>Полный цикл разработки: от анализа до запуска, а также гарантия качественного пользовательского опыта</p>
             </div>
             <div className='portf-sign-sec'>
-              <img></img>
-              <h4>Участник</h4>
+              <div>
+                <h4>Sk</h4>
+              </div>
             </div>
           </div>
           <div className='portf-img-sec'>
@@ -167,6 +162,3 @@ function App() {
 }
 
 export default App
-
-/* FBI SIA KGD CNN IBM UCC YKK KKK TRF DOS TMN CCB ELE ELO REM MSG
-BBH DRI MDC SOD ALF BAF LFO YYO BBM SDP MCA MCAT UFO ESBB MBV VIE MTV LSD USA RIP */

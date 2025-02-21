@@ -221,7 +221,7 @@ header .hero-sec .hero-sec-main .hero-sec-butt p {
 }
 header .hero-sec .hero-sec-main .hero-sec-butt:hover {
   border-radius: 999px;
-  padding: 24px 32px 24px 32px;
+  padding: 1.5rem 2rem 1.5rem 2rem;
   background: var(--bg-inverse);
   color: var(--text-inverse);
   border: none;
@@ -230,7 +230,7 @@ header .hero-sec .hero-sec-main .hero-sec-butt:hover {
 }
 header .hero-sec .hero-sec-main .hero-sec-butt:active {
   border-radius: 999px;
-  padding: 24px 32px 24px 32px;
+  padding: 1.5rem 2rem 1.5rem 2rem;
   background: var(--bg-inverse);
   color: var(--text-inverse);
   border: none;
@@ -269,71 +269,198 @@ header .hero-sec .hero-img-sec {
 main {
   width: 100%;
   position: relative;
-  background: var(--bg-inverse-tp-4);
+  background: none;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   gap: 1rem;
   margin: 1rem 0 0 0;
 }
-main .slider-sec {
+main .main-slider {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
+  background: var(--bg-inverse-tp-4);
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
 }
-main .slider-sec #slider-nav-butt-left {
-  width: 96px;
-  height: 96px;
-  border: 1px var(--border-primary-tp-8);
-  color: var(--bg-primary-tp-16);
-  border-radius: 999px;
-  padding: 2rem 3rem 2rem 3rem;
-}
-main .slider-sec #slider-nav-butt-right {
-  width: 96px;
-  height: 96px;
-  border: 1px var(--border-primary-tp-8);
-  color: var(--bg-primary-tp-16);
-  border-radius: 999px;
-  padding: 2rem 3rem 2rem 3rem;
-}
-main .slider-sec .main-slider {
+main .main-slider .slider-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-main .slider-sec .main-slider .slider-navPoint {
+main .main-slider .slider-title h2 {
+  font-size: var(--H1);
+  font-weight: 500;
+  text-align: center;
+}
+main .main-slider .slider-title .slider-navPoint {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
-main .slider-sec .main-slider .slider-navPoint .nav-point {
+main .main-slider .slider-title .slider-navPoint .nav-point {
   background: var(--bg-inverse-tp-8);
   width: 100px;
   height: 6px;
   border-radius: 999px;
   border: none;
 }
-main .slider-sec .main-slider h2 {
-  font-size: var(--H1);
-  font-weight: 500;
-  text-align: center;
-}
-main .slider-sec .main-slider .butt-sec {
+main .main-slider .slider-title .butt-sec {
   display: flex;
   gap: 0.75rem;
 }
-main .slider-sec .main-slider .butt-sec .slider-butt {
+main .main-slider .slider-title .butt-sec .slider-butt {
+  background: var(--bg-primary);
   border: none;
   border-radius: 999px;
   padding: 1rem 1.5rem 1rem 1.5rem;
   gap: 0.625rem;
+  transition: 150ms ease-out;
 }
-main .slider-sec .main-slider .butt-sec .slider-butt p {
+main .main-slider .slider-title .butt-sec .slider-butt p {
   font-weight: 400;
   font-size: var(--T1);
+}
+main .main-slider .slider-title .butt-sec .slider-butt:hover {
+  border: none;
+  border-radius: 999px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  gap: 0.625rem;
+  transition: 150ms ease-out;
+  cursor: pointer;
+}
+main .main-slider .img-slider {
+  width: 100%;
+}
+main .card-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem;
+  background: var(--bg-inverse-tp-4);
+  border: none;
+  border-radius: 2rem;
+}
+main .card-sec .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 24.25rem;
+  height: 23.375rem;
+  gap: 2rem;
+}
+main .card-sec .card p {
+  text-align: center;
+  font-size: var(--T1);
+  color: var(--text-primary);
+}
+main .card-sec .card p span {
+  font-weight: 400;
+  text-align: center;
+  font-size: var(--T1);
+  color: var(--text-primary-tp-48);
+}
+main .telegram-sec {
+  display: flex;
+  background: var(--bg-inverse-tp-4);
+  padding: 0 3rem 0 6rem;
+  gap: 4rem;
+  border: none;
+  border-radius: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+main .telegram-sec .card-text-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .telegram-sec .card-text-sec h2 {
+  font-weight: 500;
+  font-size: var(--H1);
+  color: var(--text-primary);
+}
+main .telegram-sec .card-text-sec ol {
+  counter-reset: custom-counter;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+main .telegram-sec .card-text-sec ol li {
+  counter-increment: custom-counter;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: var(--S1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+main .telegram-sec .card-text-sec ol li::before {
+  content: counter(custom-counter);
+  display: flex;
+  color: var(--text-accent);
+  background: var(--bg-accent-tp-8);
+  border: none;
+  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+}
+main .telegram-sec .card-text-sec hr {
+  color: var(--border-primary-tp-8);
+}
+main .telegram-sec .card-text-sec .card-sub-text {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+main .telegram-sec .card-text-sec .card-sub-text p {
+  font-weight: 400;
+  font-weight: var(--T2);
+  color: var(--text-primary-tp-48);
+}
+main .portfolio-sec {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  border-radius: 999px;
+}
+main .portfolio-sec .portf-content-sec {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem;
+  background: var(--bg-inverse-tp-4);
+}
+main .portfolio-sec .portf-content-sec .portf-text-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .portfolio-sec .portf-content-sec .portf-text-sec h4 {
+  font-weight: 500;
+  font-size: var(--H2);
+  color: var(--text-primary);
+}
+main .portfolio-sec .portf-content-sec .portf-text-sec p {
+  font-weight: 400;
+  font-size: var(--T2);
+  color: var(--text-primary-tp-48);
+}
+main .portfolio-sec .portf-content-sec .portf-sign-sec {
+  display: flex;
 }/*# sourceMappingURL=App.css.map */
